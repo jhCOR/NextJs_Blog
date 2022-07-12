@@ -1,0 +1,16 @@
+---
+type: posts
+title: Posts
+date: 2021-03-18
+---
+
+import { useRouter } from 'next/router'
+
+export const TagName = () => {
+  const { tag } = useRouter().query
+  
+  return tag || null
+}
+
+
+# Posts with <TagName />
